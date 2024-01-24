@@ -1,5 +1,5 @@
 pipeline {
-  agent { docker { image 'python:3.8' } }
+  agent { label 'master' }
   stages {
     stage('build') {
       steps {
